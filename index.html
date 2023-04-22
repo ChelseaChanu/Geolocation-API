@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>Geolocation API</title>
 </head>
 <body>
+    <main>
+        <div class="landing">
+            <h1>Weather API</h1>
+            <button class="fetch-btn" type="submit">Fetch Data</button>
+        </div>
     
+        <div class="main-page">
+            <div class="geolocation">
+                <div class="top">
+                    <h1>Weather API</h1>
+                    <div class="coordinates">
+                        <div class="latitude">Latitude:</div>
+                        <div class="longitude">Latitude:</div>
+                    </div>
+                    <div class="map"></div>
+                </div>
+                <div class="location-data">
+                    <h1>Weather Data</h1>
+                    <div class="data">
+                        <p id="location">Location:</p>
+                        <p id="lat">Latitude:</p>
+                        <p id="long">Longitude:</p>
+                        <p id="timeZone">TimeZone:</p>
+                        <p id="windSpeed">Wind Speed:</p>
+                        <p id="pressure">Pressure:</p>
+                        <p id="humidity">Humidity:</p>
+                        <p id="windDirection">Wind Direction:</p>
+                        <p id="uvIndex">UV Index:</p>
+                        <p id="feelsLike">Feels Like:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
