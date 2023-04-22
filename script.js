@@ -17,7 +17,7 @@ let uvIndex = document.getElementById("uvIndex");
 let feelsLike = document.getElementById("feelsLike");
 let API_KEY = "4ccb210f9d552f1bc1ab5385300801e2";
 let api = "https://api.openweathermap.org/data/3.0/onecall";
-let MAP_API_KEY = "";
+let MAP_API_KEY = "AIzaSyDEzEjs3ktQOYljgAvZRpBzvhLQTwQdk7k";
 
 fetchBtn.addEventListener("click",()=>{
     landingPage.style.display = "none";
@@ -57,6 +57,7 @@ fetchBtn.addEventListener("click",()=>{
             windDirection.innerText = windDirection.innerText+" "+data.current.wind_deg;
             uvIndex.innerText = uvIndex.innerText+" "+data.current.uvi;
             feelsLike.innerText = feelsLike.innerText+" "+data.current.feels_like;
+            console.log(data);
         })
         .catch(error => console.error(error));
     }
@@ -66,4 +67,4 @@ fetchBtn.addEventListener("click",()=>{
     }
 
     navigator.geolocation.getCurrentPosition(showPosition, errorCallBack);
-});
+})
