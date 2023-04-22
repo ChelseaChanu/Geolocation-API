@@ -17,7 +17,7 @@ let uvIndex = document.getElementById("uvIndex");
 let feelsLike = document.getElementById("feelsLike");
 let API_KEY = "4ccb210f9d552f1bc1ab5385300801e2";
 let api = "https://api.openweathermap.org/data/3.0/onecall";
-let MAP_API_KEY = "AIzaSyDEzEjs3ktQOYljgAvZRpBzvhLQTwQdk7k";
+let MAP_API_KEY = "AIzaSyA7vE-bIu72vtt-I2sSQ2Xsl1fOou0nR7Y";
 
 fetchBtn.addEventListener("click",()=>{
     landingPage.style.display = "none";
